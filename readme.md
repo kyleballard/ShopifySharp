@@ -222,7 +222,7 @@ var scopes = new List<string>()
 }
 
 //All AuthorizationService methods are static.
-string authUrl = AuthorizationService.BuildAuthorizationUrl(scopes, usersMyShopifyUrl, shopifyApiKey, redirectUrl);
+Uri authUrl = AuthorizationService.BuildAuthorizationUrl(scopes, usersMyShopifyUrl, shopifyApiKey, redirectUrl);
 ```
 
 ### Authorize an installation and generate an access token
